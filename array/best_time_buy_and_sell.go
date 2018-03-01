@@ -2,12 +2,10 @@ package array
 
 func BestTimeBuyAndSell(prices []int) int {
 	res := 0
-	for i := 0; i < len(prices)-1; i++ {
-		if prices[i] < prices[i+1] {
-			res += prices[i+1] - prices[i]
+	for i := 1; i < len(prices); i++ {
+		if prices[i] > prices[i-1] {
+			res += prices[i] - prices[i-1]
 		}
 	}
 	return res
 }
-
-
