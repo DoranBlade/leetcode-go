@@ -15,6 +15,7 @@ func valid(node *TreeNode) {
 	valid(node.Left)
 	if temp != nil && temp.Val >= node.Val {
 		res = false
+		return
 	}
 	temp = node
 	valid(node.Right)
