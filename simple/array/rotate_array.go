@@ -8,3 +8,4 @@ func Rotate(nums []int, k int)  {
 		nums[(i + k) % length] = temp[i]
 	}
 }
+

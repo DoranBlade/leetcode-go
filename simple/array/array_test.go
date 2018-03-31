@@ -11,3 +11,11 @@ func Test_Intersect(t *testing.T) {
 		t.Error("res length not expect")
 	}
 }
+
+func TestMoveZero(t *testing.T) {
+	nums := []int{1,0}
+	moveZeroes(nums)
+	if nums[0] != 1 || nums[1] != 0 {
+		t.Error("move zero test error")
+	}
+}
