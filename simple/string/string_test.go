@@ -62,6 +62,14 @@ func TestCountAndSay(t *testing.T) {
 	}
 }
 
+func TestLongestCommonPrefix(t *testing.T) {
+	res1, res2 := longestCommonPrefix([]string{"abcd", "abc", "ab"}), longestCommonPrefix([]string{"abc", "", "abc"})
+	if res1 != "ab" || res2 != "" {
+		t.Error("TestLongestCommonPrefix Error")
+	}
+}
+
+
 
 
 
